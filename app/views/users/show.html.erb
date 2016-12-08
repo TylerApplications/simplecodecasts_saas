@@ -9,9 +9,9 @@
 <h3> Profile </h3>
 <%= @user.profile.description %> <br/>
 </div>
-<div class="well profile-block">
- <h3>Contact Info</h3>
- <% if true#current_user.plan_id == 2 %>
+ <% if current_user.plan_id == 2 %>
+   <div class="well profile-block">
+    <h3>Contact Info</h3>
     <%= @user.profile.phone_number %> <br/>
     <%= @user.profile.contact_email %> <br/>
  <% end %>
